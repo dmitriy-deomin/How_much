@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dmitriy.deomin.how_much.Settings"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/fon_settings">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет фона"
+            android:id="@+id/textView_edit_fon_color"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_edit_fon_color"
+            android:onClick="Edit_color_fon"
+            android:text="@string/Edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет текста"
+            android:id="@+id/textView_edit_color_text"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit"
+            android:id="@+id/button_edit_color_text"
+            android:onClick="Edit_color_text" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет моих постов"
+            android:id="@+id/textView_edit_color_my_postov"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit"
+            android:id="@+id/button_edit_color_my_postov"
+            android:onClick="Edit_color_my_post" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет чужих постов"
+            android:id="@+id/textView_edit_color_postov"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit"
+            android:id="@+id/button_edit_color_postov"
+            android:onClick="Edit_color_postov" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет чужих постов/2"
+            android:id="@+id/textView_edit_color_postov2"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit"
+            android:id="@+id/button_edit_color_postov2"
+            android:onClick="Edit_color_postov2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:text="Цвет постов под удаление"
+            android:id="@+id/textView_edit_color_postov_delete"
+            android:gravity="center|left" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Edit"
+            android:id="@+id/button_edit_color_postov_delete"
+            android:onClick="Edit_color_post_delete" />
+    </LinearLayout>
+
+    <dmitriy.deomin.how_much.libries.Button_new
+        android:text="Изменить шрифт"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/button_open_edit_fonts"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:onClick="edit_fonts" />
+
+
+</LinearLayout>

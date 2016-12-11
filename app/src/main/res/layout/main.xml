@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/liner_bos"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_my_post">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/titl_text"
+            android:onClick="Menu_progi"
+            android:id="@+id/Button_logo" />
+        <com.nhaarman.supertooltips.ToolTipRelativeLayout
+            android:id="@+id/activity_main_tooltipRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/button_refresh_content"
+                android:background="@drawable/icon_light_refresh"
+                android:onClick="Refresh_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </com.nhaarman.supertooltips.ToolTipRelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/liner_content"
+        android:visibility="visible">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/new_text"
+                android:id="@+id/button_new"
+                android:onClick="New_tovary"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/kategorii"
+                android:id="@+id/button_kategorii"
+                android:onClick="Kategorii"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/moi_tovary"
+                android:id="@+id/button_moi_tovary"
+                android:onClick="Moi_tovary"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+                </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/pager"
+            android:layout_weight="1">
+        </android.support.v4.view.ViewPager>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_weight="0">
+        </com.google.android.gms.ads.AdView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:id="@+id/liner_add"
+            android:layout_marginTop="25dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/scrollView3"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/foto1"
+                                android:src="@drawable/med_no_photo"
+                                android:clickable="true"
+                                android:onClick="Open_dialog_add_foto"
+                                android:layout_margin="10dp"/>
+                            <com.theartofdev.edmodo.cropper.CropImageView
+                                android:id="@+id/CropImageView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp" />
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:id="@+id/edit_liner_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="25dp">
+                                <dmitriy.deomin.how_much.libries.Button_new
+                                    android:text="Готово"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/button_gotovo_foto"
+                                    android:background="@color/color_my_post"
+                                    android:onClick="Gotovo_foto"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"/>
+                                <dmitriy.deomin.how_much.libries.Button_new
+                                    android:text="Повернуть"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_weight="1"
+                                    android:id="@+id/button_rotate"
+                                    android:background="@color/color_my_post"
+                                    android:onClick="Rotate_foto"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp">
+
+                            <com.iangclifton.android.floatlabel.FloatLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/editText_name"
+                                android:hint="@string/Produkt_usluga"
+                                android:gravity="left" />
+
+                            <com.iangclifton.android.floatlabel.FloatLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/editText_mani"
+                                android:hint="@string/Cena"
+                                android:gravity="left" />
+
+                            <dmitriy.deomin.how_much.libries.Button_new
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Город"
+                                android:id="@+id/button_gorod"
+                                android:onClick="Vibrat_gorod"
+                                android:gravity="center|left"
+                                android:layout_marginLeft="7dp"
+                                android:background="@android:color/transparent" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <com.iangclifton.android.floatlabel.FloatLabel
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/editText_sity"
+                                    android:hint="@string/Magazin"
+                                    android:gravity="center|left"
+                                    android:layout_weight="0.3" />
+
+                                <dmitriy.deomin.how_much.libries.Button_new
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Найти"
+                                    android:id="@+id/button_find_magaz_iz_spiska"
+                                    android:background="@android:color/transparent"
+                                    android:onClick="Vibrat_magazin"
+                                    android:layout_weight="1" />
+                            </LinearLayout>
+
+                            <dmitriy.deomin.how_much.libries.Button_new
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Категория"
+                                android:id="@+id/button_vibrat_tovar_main"
+                                android:onClick="Kategorii"
+                                android:layout_marginLeft="7dp"
+                                android:gravity="center|left"
+                                android:background="@android:color/transparent" />
+
+                            <com.iangclifton.android.floatlabel.FloatLabel
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/editText_coment"
+                                android:hint="@string/Koment"
+                                android:gravity="center|left" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar_add"
+                    android:indeterminate="false"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+
+                <dmitriy.deomin.how_much.libries.Button_new
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="@string/save"
+                    android:id="@+id/button_add"
+                    android:onClick="add"
+                    android:background="@color/color_my_post" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</LinearLayout>
+
+

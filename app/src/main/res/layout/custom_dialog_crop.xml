@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fon_dialog_crop_foto">
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Vrashat"
+            android:id="@+id/button_dialog_crop_rotate"
+            android:background="@android:color/transparent" />
+
+        <com.edmodo.cropper.CropImageView
+           android:id="@+id/CropImageView"
+           android:src="@drawable/med_no_photo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Ggotovo"
+            android:id="@+id/button_dialog_gotovo_crop"
+            android:onClick="Gotovo"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>

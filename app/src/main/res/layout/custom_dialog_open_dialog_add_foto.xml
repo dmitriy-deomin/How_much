@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        android:elevation="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fon_dialoga_vibora_foto">
+
+    <dmitriy.deomin.how_much.libries.Button_new
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Выбрать из галереи"
+        android:id="@+id/button_dialog_vibor_add_galerea"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent" />
+
+    <dmitriy.deomin.how_much.libries.Button_new
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Сфоткать"
+        android:id="@+id/button_dialog_add_foto_new"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent" />
+</LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

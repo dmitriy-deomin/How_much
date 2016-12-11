@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="dmitriy.deomin.how_much.User_kabinet"
+    android:id="@+id/fon_user_kabinet">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:text="Псевдоним это имя в коментариях"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6" />
+
+        <com.iangclifton.android.floatlabel.FloatLabel
+            android:id="@+id/editText_psevdo_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Psevdonim"
+            android:background="@android:color/transparent" />
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:text="id будет виден в поиске пользователей"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView8" />
+
+        <com.iangclifton.android.floatlabel.FloatLabel
+            android:id="@+id/editText_eser_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ID"
+            android:background="@android:color/transparent" />
+
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:text="Поставте пароль как можно сложнее"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10" />
+
+        <com.iangclifton.android.floatlabel.FloatLabel
+            android:id="@+id/editText_pasvord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль"
+            android:clickable="true"
+            android:background="@android:color/transparent" />
+
+
+        <dmitriy.deomin.how_much.libries.TextView_new
+            android:text="id и пароль связаны, каждая комбинация новый аккаунт. Можно менять определеное количество раз "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" />
+
+        <dmitriy.deomin.how_much.libries.Button_new
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Save"
+            android:id="@+id/button_save_user_kabinet"
+            android:background="@android:color/transparent"
+            android:onClick="Save_data_user"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

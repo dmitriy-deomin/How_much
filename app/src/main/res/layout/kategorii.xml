@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filtr_loaut"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <dmitriy.deomin.how_much.libries.Button_new
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Выбрать"
+                android:id="@+id/button_vibrat_tovar"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <dmitriy.deomin.how_much.libries.Button_new
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Выбрать"
+                    android:id="@+id/button_vibrat_magazin"
+                    android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <dmitriy.deomin.how_much.libries.Button_new
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Выбрать"
+                    android:id="@+id/button_vibrat_gorod"
+                    android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <dmitriy.deomin.how_much.libries.Button_new
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Пользователь"
+                android:id="@+id/button_vibrat_user"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+
+            <dmitriy.deomin.how_much.libries.Button_new
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Название товара"
+                android:id="@+id/button_vibrat_tovat_name"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/conteiner_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/filtr_loaut">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_filtr"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/filtr_loaut"
+        android:layout_alignParentStart="true"
+        android:divider="@null" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button_show_filtr"
+        android:layout_marginLeft="0dp"
+        android:layout_alignTop="@+id/conteiner_swipe"
+        android:layout_alignParentEnd="true"
+        android:background="@android:drawable/ic_search_category_default" />
+
+    <com.nhaarman.supertooltips.ToolTipRelativeLayout
+        android:id="@+id/activity_main_tooltipRelativeLayout_kat"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</RelativeLayout>

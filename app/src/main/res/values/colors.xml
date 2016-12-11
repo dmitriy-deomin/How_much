@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--настраиваимые цвета-->
+    <color name="fon">#22c2c0</color>
+    <color name="color_my_post">#5fdcbf</color>
+    <color name="color_post">#3b9fc1</color>
+    <color name="color_post2">#1c98b1</color>
+    <color name="color_post_delete">#cf8e62</color>
+    <color name="color_text">#0d0c0c</color>
+
+
+
+</resources>
