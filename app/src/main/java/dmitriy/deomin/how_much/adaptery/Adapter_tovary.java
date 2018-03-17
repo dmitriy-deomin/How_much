@@ -124,7 +124,7 @@ public class Adapter_tovary extends SimpleAdapter {
                         if (item.getItemId() == R.id.menu_update) {
                             //загрузим аву в редактор
                             if (data.get(position).get("foto").toString() != null) {
-                                Picasso.with(context)
+                                Picasso.get()
                                         .load(data.get(position).get("foto").toString())
                                         .into(Main.getFoto1());
                             }
@@ -206,7 +206,7 @@ public class Adapter_tovary extends SimpleAdapter {
         //data.get(position).get("prioritet").toString();
 
         if (data.get(position).get("foto").toString() != null) {
-            Picasso.with(context)
+            Picasso.get()
                     .load(data.get(position).get("foto").toString())
                     .resize(Main.width_d,Main.width_d)
                     .into(viewHolder.ava);
@@ -221,12 +221,12 @@ public class Adapter_tovary extends SimpleAdapter {
 
 
                 if (data.get(position).get("foto").toString() != null) {
-                    Picasso.with(context)
+                    Picasso.get()
                             .load(data.get(position).get("foto").toString())
                             .resize(Main.width_d, Main.width_d)
                             .into(((TouchImageView) content.findViewById(R.id.ava_full_skrin)));
                 } else {
-                    Picasso.with(context).load(R.drawable.med_no_photo).into(((TouchImageView) content.findViewById(R.id.ava_full_skrin)));
+                    Picasso.get().load(R.drawable.med_no_photo).into(((TouchImageView) content.findViewById(R.id.ava_full_skrin)));
                 }
 
                 final AlertDialog alertDialog = builder.create();

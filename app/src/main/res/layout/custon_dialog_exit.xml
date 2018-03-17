@@ -53,21 +53,20 @@
         android:layout_below="@+id/textView">
 
         <Button
+            android:id="@+id/button_dialog_cansel"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            style="?android:attr/borderlessButtonStyle"
-            android:id="@+id/button_dialog_exit"
-            android:background="@android:drawable/ic_delete"
-            android:layout_marginRight="30dp" />
+            android:layout_gravity="left"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/icon_dark_undo" />
 
         <Button
+            android:id="@+id/button_dialog_exit"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            style="?android:attr/borderlessButtonStyle"
-            android:id="@+id/button_dialog_cansel"
-            android:layout_gravity="left"
-            android:layout_marginLeft="5dp"
-            android:background="@drawable/icon_dark_undo" />
+            android:background="@android:drawable/ic_delete" />
 
     </LinearLayout>
 

@@ -265,6 +265,16 @@
             android:layout_marginRight="10dp" />
 
         <Button
+            android:id="@+id/button_delet_po_dislaykam"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toStartOf="@+id/button_dislake"
+            android:background="@android:drawable/ic_delete"
+            android:visibility="gone" />
+
+        <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:id="@+id/button_root_edit"
@@ -273,16 +283,6 @@
             android:layout_marginLeft="5dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />
-
-        <Button
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:id="@+id/button_delet_po_dislaykam"
-            android:background="@android:drawable/ic_delete"
-            android:layout_alignParentTop="true"
-            android:layout_toStartOf="@+id/button_dislake"
-            android:layout_marginRight="10dp"
-            android:visibility="gone" />
 
 
     </RelativeLayout>
